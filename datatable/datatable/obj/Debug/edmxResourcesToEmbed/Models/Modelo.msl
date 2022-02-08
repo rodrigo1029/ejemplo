@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IncentivosModelStoreContainer" CdmEntityContainer="IncentivosEntities8">
+    <EntitySetMapping Name="Colaboradores">
+      <EntityTypeMapping TypeName="IncentivosModel.Colaboradores">
+        <MappingFragment StoreEntitySet="Colaboradores">
+          <ScalarProperty Name="Cla_trab" ColumnName="Cla_trab" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ganadores">
+      <EntityTypeMapping TypeName="IncentivosModel.Ganadores">
+        <MappingFragment StoreEntitySet="Ganadores">
+          <ScalarProperty Name="Regalo" ColumnName="Regalo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Clab_Trab" ColumnName="Clab_Trab" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regalos">
+      <EntityTypeMapping TypeName="IncentivosModel.Regalos">
+        <MappingFragment StoreEntitySet="Regalos">
+          <ScalarProperty Name="Entregado" ColumnName="Entregado" />
+          <ScalarProperty Name="Regalo" ColumnName="Regalo" />
+          <ScalarProperty Name="Id_regalo" ColumnName="Id_regalo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="38b75861553d411da5b73434905a632b" Name="Diagram1" ZoomLevel="30">
+        <EntityTypeShape EntityType="IncentivosModel.Colaboradores" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IncentivosModel.Ganadores" Width="1.5" PointX="3.625" PointY="0.875" />
+        <EntityTypeShape EntityType="IncentivosModel.Regalos" Width="1.5" PointX="2.625" PointY="3.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IncentivosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Colaboradores">
+    <Key>
+      <PropertyRef Name="Cla_trab" />
+    </Key>
+    <Property Name="Cla_trab" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="255" />
+    <Property Name="Departamento" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Ganadores">
+    <Key>
+      <PropertyRef Name="Clab_Trab" />
+    </Key>
+    <Property Name="Clab_Trab" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Departamento" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Regalo" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Regalos">
+    <Key>
+      <PropertyRef Name="Id_regalo" />
+    </Key>
+    <Property Name="Id_regalo" Type="int" Nullable="false" />
+    <Property Name="Regalo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Entregado" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityContainer Name="IncentivosModelStoreContainer">
+    <EntitySet Name="Colaboradores" EntityType="Self.Colaboradores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ganadores" EntityType="Self.Ganadores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Regalos" EntityType="Self.Regalos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
